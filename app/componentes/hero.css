@@ -1,0 +1,72 @@
+/* hero.css */
+
+/* Estilos para el contenedor con fondo blureado */
+#cuadradotexto {
+  background: rgba(162, 162, 162, 0.2); /* Fondo blanco más transparente */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Más desenfoque */
+  padding: 60px; /* Espaciado interno mayor */
+  width: 60vw; /* Ocupa el 90% del ancho de la vista */
+  height: 75vh; /* Altura del contenedor (70% de la altura de la vista) */
+  display: flex; /* Usa Flexbox para centrar el contenido */
+  flex-direction: column; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  position: relative; /* Necesario para que el efecto de desenfoque funcione correctamente */
+}
+
+
+  
+  /* Estilos para el botón */
+  .buttonhero {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    color: white;
+  }
+  
+  .buttonhero .spanhero {
+    position: relative;
+    z-index: 1;
+    transition: color 0.4s;
+  }
+  
+  .buttonhero:hover .spanhero {
+    color: #609a93;
+  }
+  
+  .buttonhero::before,
+  .buttonhero::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .buttonhero::before {
+    content: "";
+    background: #609a93;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .buttonhero:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
