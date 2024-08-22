@@ -10,29 +10,23 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Columna de Información */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4">Centro Integral de Rehabilitación</h3>
+            <div className="flex items-center gap-1">
+              <img src="../logo.svg" className="h-12"/>
+              <h3 className="text-2xl font-semibold my-4">Harmony Haven</h3>
+            </div>
             <p className="mb-4">
               Estamos dedicados a ofrecerte el mejor cuidado y atención para tu rehabilitación. Contáctanos para más información sobre nuestros servicios.
-            </p>
-            <p className="mb-4">
-              <strong>Teléfono:</strong> (123) 456-7890
-            </p>
-            <p className="mb-4">
-              <strong>Email:</strong> contacto@rehabilitacion.com
-            </p>
-            <p>
-              <strong>Dirección:</strong> Calle Ejemplo 123, Ciudad, País
             </p>
           </div>
           {/* Columna de Enlaces */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Menú de navegación</h3>
             <ul>
-              <li><a href="#home" className="hover:underline">Inicio</a></li>
-              <li><a href="#servicios" className="hover:underline">Servicios</a></li>
-              <li><a href="#testimonios" className="hover:underline">Insumos ortopédicos</a></li>
-              <li><a href="#contacto" className="hover:underline">Nosotros</a></li>
-              <li><a href="#contacto" className="hover:underline">Contacto</a></li>
+              <li><a href="/" className="hover:underline">Inicio</a></li>
+              <li><a href="/servicios" className="hover:underline">Servicios</a></li>
+              <li><a href="/insumos" className="hover:underline">Insumos ortopédicos</a></li>
+              <li><a href="/nosotros" className="hover:underline">Nosotros</a></li>
+              <li><a href="/contacto" className="hover:underline">Contacto</a></li>
             </ul>
           </div>
           {/* Columna de Redes Sociales */}

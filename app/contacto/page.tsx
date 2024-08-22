@@ -1,7 +1,7 @@
 "use client";
 import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
-import { FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaFacebook } from "react-icons/fa";
 import { useState } from 'react';
 import { Contact } from "../componentes/contacto-btn";
 
@@ -13,7 +13,7 @@ export default function Contacto() {
         e.preventDefault();
 
         // Crear el mensaje de WhatsApp con los datos del formulario
-        const mensajeWhatsApp = `Hola, me llamo ${nombre}. Mi mensaje es: ${mensaje}`;
+        const mensajeWhatsApp = `Hola, me llamo ${nombre}. Mi consulta es: ${mensaje}`;
         const urlWhatsApp = `https://wa.me/+5491155111262?text=${encodeURIComponent(mensajeWhatsApp)}`;
 
         // Redirigir al usuario a WhatsApp
@@ -26,38 +26,16 @@ export default function Contacto() {
             <div className="relative my-12 bg-gray-100 py-12 px-4 lg:px-10">
                 
                 {/* Título de la sección */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-12 flex flex-col justify-center items-center">
                     <h2 className="text-4xl lg:text-5xl text-verde font-bold mb-4">Contáctanos</h2>
-                    <p className="text-lg text-gray-600">
-                        ¿Tienes preguntas o necesitas asistencia? Estamos aquí para ayudarte. Elige cómo prefieres contactarnos.
+                    <p className="text-lg text-gray-600 max-w-2xl text-center">
+                        Estamos aquí para ayudarte en tu camino hacia la recuperación. Si tienes alguna consulta o necesitas más información sobre nuestros servicios, no dudes en ponerte en contacto con nosotros.
                     </p>
                 </div>
 
                 {/* Contenedor general con borde redondeado */}
-                <div className="flex flex-col lg:flex-row bg-white rounded-lg overflow-hidden shadow-lg">
+                <div className="flex flex-col lg:flex-row bg-white rounded-lg overflow-hidden shadow-lg max-w-5xl mx-auto">
 
-                    {/* Información de contacto con fondo verde claro */}
-                    <div className="bg-verdeclaro p-8 text-white lg:w-1/2">
-                        <h3 className="text-2xl font-semibold mb-4">Información de Contacto</h3>
-                        <p className="mb-6">
-                            Utiliza cualquiera de los siguientes medios para ponerte en contacto con nosotros. Estamos disponibles para atender tus consultas.
-                        </p>
-                        <div className="flex items-center mb-4">
-                            <FaMapMarkerAlt className="text-2xl mr-4" />
-                            <p>123 Calle Falsa, Ciudad, País</p>
-                        </div>
-                        <div className="flex items-center mb-4">
-                            <FaPhoneAlt className="text-2xl mr-4" />
-                            <p>+123 456 7890</p>
-                        </div>
-                        <div className="flex items-center">
-                            <FaWhatsapp className="text-2xl mr-4" />
-                            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
-                                +123 456 7890
-                            </a>
-                        </div>
-                    </div>
-                    
                     {/* Formulario de contacto */}
                     <div className="bg-white p-8 lg:w-1/2">
                         <h3 className="text-2xl font-semibold text-verde mb-4">Envíanos un Mensaje</h3>
@@ -96,12 +74,43 @@ export default function Contacto() {
                             </div>
                         </form>
                     </div>
+
+                    {/* Información de contacto con fondo verde claro */}
+                    <div className="bg-verdeclaro p-8 text-white lg:w-1/2">
+                        <h3 className="text-2xl font-semibold mb-12">Información de Contacto</h3>
+                        <div className="flex items-center mb-4">
+                            <FaMapMarkerAlt className="text-2xl mr-4" />
+                            <p>Fray Martínez 461, San Miguel del Monte, Argentina</p>
+                        </div>
+                        <div className="flex items-center mb-4">
+                            <FaPhoneAlt className="text-2xl mr-4" />
+                            <p>+54 9 1155111262</p>
+                        </div>
+                        <div className="flex items-center mb-4">
+                            <FaInstagram className="text-2xl mr-4" />
+                            <a href="https://instagram.com/tu_cuenta" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
+                                Instagram
+                            </a>
+                        </div>
+                        <div className="flex items-center mb-4">
+                            <FaFacebook className="text-2xl mr-4" />
+                            <a href="https://facebook.com/tu_cuenta" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
+                                Facebook
+                            </a>
+                        </div>
+                        <div className="flex items-center">
+                            <FaWhatsapp className="text-2xl mr-4" />
+                            <a href="https://wa.me/5491155111262" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
-                {/* Mapa embebido (opcional) */}
+                {/* Mapa embebido */}
                 <div className="text-center mt-12">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.168572174758!2d-122.4194154!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809cbbb5cdef%3A0xa9ffedb6d7557a2e!2s123%20Calle%20Falsa%2C%20Ciudad%2C%20Pa%C3%ADs!5e0!3m2!1ses!2sar!4v1620954020509!5m2!1ses!2sar"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.1460857752396!2d-58.80406572567061!3d-35.43432735552383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd7b7e682f8df9%3A0x2637b445f3bd940d!2sFray%20Manuel%20Mart%C3%ADnez%20461%2C%20San%20Miguel%20del%20Monte%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1692786901984!5m2!1ses-419!2sar"
                         className="w-full h-[400px] rounded-lg border-none"
                         allowFullScreen=""
                         loading="lazy"
