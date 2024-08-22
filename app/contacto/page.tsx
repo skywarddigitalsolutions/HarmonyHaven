@@ -88,8 +88,8 @@ export default function Contacto() {
                         </div>
                         <div className="flex items-center mb-4">
                             <FaInstagram className="text-2xl mr-4" />
-                            <a href="https://instagram.com/tu_cuenta" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
-                                Instagram
+                            <a href="https://instagram.com/harmonyhavenba" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
+                                @harmonyhavenba
                             </a>
                         </div>
                         <div className="flex items-center mb-4">
