@@ -88,13 +88,13 @@ export default function Contacto() {
                         </div>
                         <div className="flex items-center mb-4">
                             <FaInstagram className="text-2xl mr-4" />
-                            <a href="https://instagram.com/harmonyhavenba" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
+                            <a href="https://instagram.com/harmonyhavenba" target="_blank" rel="noopener noreferrer" className="hover:text-verdeclaro">
                                 @harmonyhavenba
                             </a>
                         </div>
                         <div className="flex items-center">
                             <FaWhatsapp className="text-2xl mr-4" />
-                            <a href="https://wa.me/5491155111262" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
+                            <a href="https://wa.me/5491155111262" target="_blank" rel="noopener noreferrer" className="hover:text-verdeclaro">
                                 WhatsApp
                             </a>
                         </div>
