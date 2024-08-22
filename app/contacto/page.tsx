@@ -92,12 +92,6 @@ export default function Contacto() {
                                 @harmonyhavenba
                             </a>
                         </div>
-                        <div className="flex items-center mb-4">
-                            <FaFacebook className="text-2xl mr-4" />
-                            <a href="https://facebook.com/tu_cuenta" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
-                                Facebook
-                            </a>
-                        </div>
                         <div className="flex items-center">
                             <FaWhatsapp className="text-2xl mr-4" />
                             <a href="https://wa.me/5491155111262" target="_blank" rel="noopener noreferrer" className="hover:text-verde">
