@@ -8,7 +8,7 @@ export default function Loader() {
                 <div className="three-body__dot"></div>
                 <div className="three-body__dot"></div>
                 </div>
-                <h4 className="text-white text-5xl mt-2 font-bold">Harmony Haven</h4>
+                <h4 className="text-white text-4xl lg:text-5xl mt-5 font-bold">Harmony Haven</h4>
 
         </div>
         </>

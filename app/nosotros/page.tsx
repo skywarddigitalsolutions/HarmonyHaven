@@ -1,4 +1,3 @@
-
 "use client"
 import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
@@ -18,11 +17,11 @@ export default function Nosotros() {
                     </p>
                 </div>
 
-                {/* Contenido de la sección */}
-                <div className="flex flex-col lg:flex-row items-center lg:justify-between space-y-8 lg:space-y-0">
+                {/* Contenedor principal con bordes redondeados */}
+                <div className="relative flex flex-col lg:flex-row items-stretch bg-white rounded-lg overflow-hidden shadow-lg">
                     
                     {/* Información */}
-                    <div className="bg-white p-8 rounded-lg shadow-lg flex-1">
+                    <div className="flex-1 p-8 flex flex-col justify-center">
                         <h3 className="text-2xl font-semibold text-verde mb-4">Nuestra Misión</h3>
                         <p className="text-gray-700 mb-4">
                             En [Nombre de la Empresa], nos dedicamos a proporcionar soluciones innovadoras y de alta calidad en [tu industria o sector]. Nuestra misión es mejorar la vida de nuestros clientes mediante la excelencia en cada servicio que ofrecemos.
@@ -41,14 +40,15 @@ export default function Nosotros() {
                     </div>
 
                     {/* Imagen */}
-                    <div className="flex-1 relative w-full h-80 lg:h-[500px] rounded-lg overflow-hidden">
-                        <Image
-                            src="/fotoinfo.jpg" // Cambia esto por la ruta a tu imagen
-                            alt="Sobre Nosotros"
-                            layout="fill"
-                            objectFit="cover"
-                            className="absolute inset-0"
-                        />
+                    <div className="relative flex-1">
+                        <div className="relative w-full h-full">
+                            <Image
+                                src="/fotoinfo.jpg" // Cambia esto por la ruta a tu imagen
+                                alt="Sobre Nosotros"
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

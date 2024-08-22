@@ -31,7 +31,7 @@ import { GiBarefoot } from "react-icons/gi";
 import { GiFootprint } from "react-icons/gi";
 import { GiJoint } from "react-icons/gi";
 import { MdAssistWalker } from "react-icons/md";
-
+import Image from "next/image";
 const services = [
   {
     name: "Masajes",
@@ -65,6 +65,7 @@ const services = [
     icon: GiJoint,
   },
 ];
+import Logo from "../../public/logo.svg"
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,10 +76,13 @@ export default function Navbar() {
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex items-center gap-1 lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Harmony Haven</span>
-            <img alt="" src="./logo.svg" className="h-10 w-auto" />
+            <Image alt="" src={Logo} className="h-10 w-auto" />
+          </a>
+          <a href="/">
+            <h5 className="text-white text-sm lg:text-md text-center lg:mb-1">Harmony Haven</h5>
           </a>
         </div>
         <div className="flex lg:hidden">

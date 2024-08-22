@@ -84,7 +84,7 @@ export default function Contacto() {
                         </div>
                         <div className="flex items-center mb-4">
                             <FaPhoneAlt className="text-2xl mr-4" />
-                            <p>+54 9 1155111262</p>
+                            <p>+5491155111262</p>
                         </div>
                         <div className="flex items-center mb-4">
                             <FaInstagram className="text-2xl mr-4" />

@@ -51,7 +51,7 @@ export default function Info() {
             src="./fotoinfo.jpg"
             width={2432}
             height={1442}
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover lg:w-[48rem] lg:max-w-none lg:rounded-xl lg:shadow-xl lg:ring-1 lg:ring-gray-400/10"
           />
         </div>
       </div>

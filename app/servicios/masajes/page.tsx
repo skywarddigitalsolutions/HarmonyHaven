@@ -7,15 +7,15 @@ export default function Masajes() {
         <>
             <Navbar />
                       
-                <div className="relative mt-12" id="body">
+                <div className="relative bg-gray-100 mt-12" id="body">
 
                 {/* Breadcrumb */}
-                <nav className="absolute top-0 left-0 right-0 mt-8 mx-5 z-20" aria-label="Breadcrumb">
+                <nav className="absolute top-0 left-0 right-0 mt-8 mx-5 z-10" aria-label="Breadcrumb">
                     <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                         <li className="inline-flex items-center">
                             <a
                                 href="/"
-                                className="inline-flex items-center text-sm font-medium text-verdeclaro hover:text-white dark:text-gray-400 dark:hover:text-white"
+                                className="inline-flex items-center text-sm font-medium text-verdeclaro hover:text-white "
                             >
                                 Inicio
                             </a>
@@ -39,7 +39,7 @@ export default function Masajes() {
                                 </svg>
                                 <a
                                     href="/servicios"
-                                    className="ms-1 text-sm font-medium text-verdeclaro hover:text-white md:ms-2 dark:text-gray-400 dark:hover:text-white"
+                                    className="ms-1 text-sm font-medium text-verdeclaro hover:text-white md:ms-2 "
                                 >
                                     Servicios
                                 </a>
@@ -91,7 +91,7 @@ export default function Masajes() {
                 </div>
 
                 {/* beneficios */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 lg:mx-10">
+                <div className=" bg-gray-100 grid grid-cols-2 lg:grid-cols-4 py-5 gap-6 mt-12 px-2 lg:px-10">
                     <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
                         <FaRegSmile className="text-verdeoscuro text-4xl mb-4" />
                         <h4 className="text-lg font-semibold text-verdeoscuro">Alivia las Tensiones</h4>
@@ -115,7 +115,7 @@ export default function Masajes() {
                 </div>
 
                     {/* CAÑAS */}
-                    <div id="cañas" className="flex flex-col justify-center items-center mt-24 mx-24">
+                    <div id="cañas" className="flex flex-col justify-center items-center mt-24  mx-5 lg:mx-24">
                         <div className="flex flex-col lg:flex-row gap-12 justify-around items-center w-full" id="contenedorreservar">
                             <div className="flex flex-col justify-around gap-12" id="texto">
                                 <div>
@@ -128,63 +128,63 @@ export default function Masajes() {
                                     <button className="p-5 bg-verde text-lg text-white rounded-xl">Reservar turno</button>
                                 </div>
                             </div>
-                            <div id="imagen">
-                                <img src="../../fotoinfo.jpg" className="max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
+                            <div id="imagen" className="mx-2">
+                                <img src="../../fotoinfo.jpg" className=" max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
                             </div>
                         </div>
 
                         {/* Duración CAÑAS */}
                         <div className="w-full flex flex-col justify-center items-center mt-12">
                             <h5 className="text-verdeoscuro text-center font-bold mb-2">Duración</h5>
-                            <div className="w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
+                            <div className="w-[100%] lg:w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
                                 <div className="bg-verdeoscuro h-2.5 rounded-full w-[75%]"></div>
-                                <h5 className="ml-[72%] mt-2">1:30 hs</h5>
+                                <h5 className="ml-[70%] mt-2">1:30 hs</h5>
                             </div>
                         </div>
 
                         {/* Beneficios CAÑAS */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8 px-4 lg:px-0">
+                        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 my-8">
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Mejora la circulación sanguínea</h4>
+                                <h4 className="text-md font-semibold text-verdeoscuro">Mejora la circulación sanguínea</h4>
                                 <p className="text-sm text-gray-700 mt-2">Optimiza el flujo de sangre y el sistema linfático.</p>
                             </div>
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Relaja el sistema nervioso</h4>
+                                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Relaja el sistema nervioso</h4>
                                 <p className="text-sm text-gray-700 mt-2">Calma y estabiliza el sistema nervioso.</p>
                             </div>
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Reduce el dolor muscular</h4>
+                                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Reduce el dolor muscular</h4>
                                 <p className="text-sm text-gray-700 mt-2">Disminuye el dolor y mejora la flexibilidad.</p>
                             </div>
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Fortalece el tejido conectivo</h4>
+                                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Fortalece el tejido conectivo</h4>
                                 <p className="text-sm text-gray-700 mt-2">Aumenta la resistencia y elasticidad del tejido.</p>
                             </div>
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Estimula el sistema linfático</h4>
+                                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Estimula el sistema linfático</h4>
                                 <p className="text-sm text-gray-700 mt-2">Ayuda a eliminar toxinas y líquidos retenidos.</p>
                             </div>
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Aumenta la energía</h4>
+                                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Aumenta la energía</h4>
                                 <p className="text-sm text-gray-700 mt-2">Revitaliza y aumenta el nivel de energía general.</p>
                             </div>
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Reduce la celulitis</h4>
+                                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Reduce la celulitis</h4>
                                 <p className="text-sm text-gray-700 mt-2">Mejora la apariencia de la piel y reduce la celulitis.</p>
                             </div>
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Alivia el estrés</h4>
+                                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Alivia el estrés</h4>
                                 <p className="text-sm text-gray-700 mt-2">Disminuye los niveles de estrés y promueve la calma.</p>
                             </div>
                             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                                <h4 className="text-lg font-semibold text-verdeoscuro">Mejora la postura</h4>
+                                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Mejora la postura</h4>
                                 <p className="text-sm text-gray-700 mt-2">Ayuda a corregir y mejorar la postura corporal.</p>
                             </div>
                         </div>
                     </div>
 
                     {/*REDUCTOR*/}
-                  <div id="reductor" className="flex flex-col justify-center items-center mt-24 mx-24">
+                  <div id="reductor" className="flex flex-col justify-center items-center mt-24 mx-5 lg:mx-24">
         <div className="flex flex-col lg:flex-row-reverse gap-12 justify-around items-center w-full" id="contenedorreservar">
             <div className="flex flex-col justify-around gap-12" id="texto">
                 <div>
@@ -197,99 +197,96 @@ export default function Masajes() {
                     <button className="p-5 bg-verde text-lg  text-white rounded-xl">Reservar turno</button>
                 </div>
             </div>
-            <div id="imagen">
-                <img src="../../fotoinfo.jpg" className="max-w-[500px] rounded-xl" alt="Masaje reductor"></img>
+            <div id="imagen" className="mx-2">
+                <img src="../../fotoinfo.jpg" className="max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje reductor"></img>
             </div>
         </div>
 
         {/* Duración REDUCTOR */}
         <div className="w-full flex flex-col justify-center items-center mt-12">
             <h5 className="text-verdeoscuro text-center font-bold mb-2">Duración</h5>
-            <div className="w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
+            <div className=" w-[100%] lg:w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
                 <div className="bg-verdeoscuro h-2.5 rounded-full w-[75%]"></div>
-                <h5 className="ml-[72%] mt-2">1:30 hs</h5>
+                <h5 className="ml-[70%] mt-2">1:30 hs</h5>
             </div>
         </div>
 
         {/* Beneficios REDUCTOR */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8 px-4 lg:px-0">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 my-8">
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Elimina grasa localizada</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Elimina grasa localizada</h4>
                 <p className="text-sm text-gray-700 mt-2">Ayuda a eliminar el exceso de grasa en áreas específicas.</p>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Mejora la circulación</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Mejora la circulación</h4>
                 <p className="text-sm text-gray-700 mt-2">Estimula la circulación y el metabolismo local.</p>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Estiliza la figura</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Estiliza la figura</h4>
                 <p className="text-sm text-gray-700 mt-2">Ayuda a esculpir y mejorar la silueta corporal.</p>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Mejora la elasticidad</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Mejora la elasticidad</h4>
                 <p className="text-sm text-gray-700 mt-2">Fortalece y tonifica la piel.</p>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Reduce el tejido adiposo</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Reduce el tejido adiposo</h4>
                 <p className="text-sm text-gray-700 mt-2">Ayuda a disolver la grasa acumulada.</p>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Favorece la quema de calorías</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Favorece la quema de calorías</h4>
                 <p className="text-sm text-gray-700 mt-2">Aumenta el consumo de calorías debido a la actividad motora.</p>
             </div>
         </div>
                   </div>
                     {/* DRENAJE*/}
-                  <div id="drenaje" className="flex flex-col justify-center items-center mt-24 mx-24">
+                  <div id="drenaje" className="flex flex-col justify-center items-center mt-24 mx-5 lg:mx-24">
                     <div className="flex flex-col lg:flex-row gap-12 justify-around items-center w-full" id="contenedorreservar">
                               <div className="flex flex-col justify-around gap-12" id="texto">
                                   <div>
                                       <h4 className="text-5xl font-bold text-verde mb-5">Drenaje linfático </h4>
-                                      <h5 className="text-lg text-verdeoscuro max-w-auto">
-                                      Es una técnica de masaje suave y lenta que tiene
-    como objetivo facilitar el paso de la linfa a través del sistema circulatorio
-    y estimular su eliminación.                                  </h5>
+                                      <h5 className="text-lg text-verdeoscuro max-w-auto"> Es una técnica de masaje suave y lenta que tiene como objetivo facilitar el paso de la linfa a través del sistema circulatorio y estimular su eliminación.                                  </h5>
                                   </div>
                                   <div>
                                       <button className="p-5 bg-verde text-lg text-white rounded-xl">Reservar turno</button>
                                   </div>
                               </div>
-                              <div id="imagen">
-                                  <img src="../../fotoinfo.jpg" className="max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
+                              <div id="imagen" className="mx-2">
+                                  <img src="../../fotoinfo.jpg" className=" max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
                               </div>
                       </div>
 
         {/* Duración DRENAJE */}
         <div className="w-full flex flex-col justify-center items-center mt-12">
             <h5 className="text-verdeoscuro text-center font-bold mb-2">Duración</h5>
-            <div className="w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
+            <div className="w-[100%] lg:w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
                 <div className="bg-verdeoscuro h-2.5 rounded-full w-[75%]"></div>
-                <h5 className="ml-[72%] mt-2">1:30 hs</h5>
+                <h5 className="ml-[70%] mt-2">1:30 hs</h5>
             </div>
         </div>
 
         {/* Beneficios DRENAJE */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8 px-4 lg:px-0">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 my-8 px-4 lg:px-0">
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Elimina la retención de líquido</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Elimina la retención de líquido</h4>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Reduce la celulitis</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Reduce la celulitis</h4>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Recuperación de lesiones musculares</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Recuperación de lesiones musculares</h4>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Recupera tejidos</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Recupera tejidos</h4>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Reduce hematomas</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Reduce hematomas</h4>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Elimina toxinas</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Elimina toxinas</h4>
             </div>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
-                <h4 className="text-lg font-semibold text-verdeoscuro">Ayuda a una cicatrización más rápida de los tejidos</h4>
+                <h4 className="text-md lg:text-lg font-semibold text-verdeoscuro">Ayuda a una cicatrización más rápida de los tejidos</h4>
             </div>
         </div>
                   </div>

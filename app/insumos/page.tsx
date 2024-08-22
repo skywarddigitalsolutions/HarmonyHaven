@@ -60,7 +60,7 @@ export default function InsumosOrtopedicos() {
     return (
         <>
             <Navbar />
-            <div className="relative my-12" id="body">
+            <div className="bg-gray-100 relative py-12" id="body">
 
                 {/* Imagen de fondo */}
                 <div className="relative">
@@ -80,7 +80,7 @@ export default function InsumosOrtopedicos() {
                 </div>
 
                 {/* Productos */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 lg:mx-10">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-12 py-5 gap-6 px-5 lg:px-10">
                     {productos.map((producto, index) => (
                         <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center">
                             <img src={producto.imagen} alt={producto.nombre} className="w-full h-48 object-cover mb-4 rounded-md" />

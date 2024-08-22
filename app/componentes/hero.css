@@ -1,23 +1,41 @@
-/* hero.css */
-
 /* Estilos para el contenedor con fondo blureado */
 #cuadradotexto {
   background: rgba(162, 162, 162, 0.2); /* Fondo blanco más transparente */
   border-radius: 15px;
-  backdrop-filter: blur(10px); /* Más desenfoque */
-  padding: 60px; /* Espaciado interno mayor */
-  width: 60vw; /* Ocupa el 90% del ancho de la vista */
-  height: 75vh; /* Altura del contenedor (70% de la altura de la vista) */
-  display: flex; /* Usa Flexbox para centrar el contenido */
-  flex-direction: column; /* Centra el contenido verticalmente */
-  justify-content: center; /* Centra el contenido verticalmente */
-  align-items: center; /* Centra el contenido horizontalmente */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  position: relative; /* Necesario para que el efecto de desenfoque funcione correctamente */
+  backdrop-filter: blur(10px); /* Desenfoque */
+  padding: 70px 10px; /* Espaciado interno */
+  width: 95vw; /* Ancho en móviles */
+  max-width: 1000px; /* Ancho máximo */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Contenido vertical */
+  justify-content: center; /* Alineación vertical */
+  align-items: center; /* Alineación horizontal */
+  margin: 0 auto; /* Centrado */
+  position: relative; /* Para el efecto de desenfoque */
 }
 
+/* Estilos Responsivos */
+@media (min-width: 640px) {
+  #cuadradotexto {
+    padding: 40px 30px;
+    width: 85vw;
+  }
+}
 
-  
+@media (min-width: 768px) {
+  #cuadradotexto {
+    padding: 50px 40px;
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  #cuadradotexto {
+    padding: 60px 50px;
+    width: 60vw;
+  }
+}
+
   /* Estilos para el botón */
   .buttonhero {
     outline: none;

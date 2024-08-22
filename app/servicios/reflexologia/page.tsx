@@ -6,15 +6,15 @@ export default function Reflexología() {
     return(
         <>
             <Navbar/>
-            <div className="relative my-12" id="body">
+            <div className=" bg-gray-100 relative my-12" id="body">
 
                 {/* Breadcrumb */}
-                <nav className="absolute top-0 left-0 right-0 mt-8 mx-5 z-20" aria-label="Breadcrumb">
+                <nav className="absolute top-0 left-0 right-0 mt-8 mx-5 z-10" aria-label="Breadcrumb">
                     <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                         <li className="inline-flex items-center">
                             <a
                                 href="/"
-                                className="inline-flex items-center text-sm font-medium text-verdeclaro hover:text-white dark:text-gray-400 dark:hover:text-white"
+                                className="inline-flex items-center text-sm font-medium text-verdeclaro hover:text-white"
                             >
                                 Inicio
                             </a>
@@ -38,7 +38,7 @@ export default function Reflexología() {
                                 </svg>
                                 <a
                                     href="/servicios"
-                                    className="ms-1 text-sm font-medium text-verdeclaro hover:text-white md:ms-2 dark:text-gray-400 dark:hover:text-white"
+                                    className="ms-1 text-sm font-medium text-verdeclaro hover:text-white md:ms-2"
                                 >
                                     Servicios
                                 </a>
@@ -89,7 +89,7 @@ export default function Reflexología() {
                 </div>
 
                 {/* BENEFICIOS*/}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 lg:mx-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-5 gap-6 mt-12 px-2 lg:px-10">
     <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-6 text-center">
         <FaSpa className="text-verdeoscuro text-4xl mb-4" />
         <h4 className="text-lg font-semibold text-verdeoscuro">Alivio del Estrés y la Ansiedad</h4>
