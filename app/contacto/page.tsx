@@ -9,7 +9,7 @@ export default function Contacto() {
     const [nombre, setNombre] = useState('');
     const [mensaje, setMensaje] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
 
         // Crear el mensaje de WhatsApp con los datos del formulario
@@ -57,7 +57,7 @@ export default function Contacto() {
                                 <textarea
                                     name="consulta"
                                     id="consulta"
-                                    rows="4"
+                                    rows= {4}
                                     value={mensaje}
                                     onChange={(e) => setMensaje(e.target.value)}
                                     required
@@ -112,7 +112,6 @@ export default function Contacto() {
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.1460857752396!2d-58.80406572567061!3d-35.43432735552383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd7b7e682f8df9%3A0x2637b445f3bd940d!2sFray%20Manuel%20Mart%C3%ADnez%20461%2C%20San%20Miguel%20del%20Monte%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1692786901984!5m2!1ses-419!2sar"
                         className="w-full h-[400px] rounded-lg border-none"
-                        allowFullScreen=""
                         loading="lazy"
                         title="Mapa de ubicación"
                     ></iframe>
