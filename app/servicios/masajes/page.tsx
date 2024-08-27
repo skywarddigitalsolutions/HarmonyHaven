@@ -72,7 +72,7 @@ export default function Masajes() {
 
                 {/* Imagen de fondo */}
                 <div className="relative">
-                    <img src="../../fotoinfo.jpg" className="object-cover w-full h-[25vh] opacity-80 rounded-2xl" alt="Masajes" />
+                    <img src="../../masajes.webp" className="object-cover w-full h-[25vh] filter brightness-50 rounded-2xl" alt="Masajes" />
 
                     {/* Fondo con gradiente */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white to-white opacity-90"></div>
@@ -129,7 +129,7 @@ export default function Masajes() {
                                 </div>
                             </div>
                             <div id="imagen" className="mx-2">
-                                <img src="../../fotoinfo.jpg" className=" max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
+                                <img src="../../masajeconcañas.webp" className=" max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
                             </div>
                         </div>
 
@@ -138,7 +138,7 @@ export default function Masajes() {
                             <h5 className="text-verdeoscuro text-center font-bold mb-2">Duración</h5>
                             <div className="w-[100%] lg:w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
                                 <div className="bg-verdeoscuro h-2.5 rounded-full w-[75%]"></div>
-                                <h5 className="ml-[70%] mt-2">1:30 hs</h5>
+                                <h5 className="ml-[70%] mt-2">45 min</h5>
                             </div>
                         </div>
 
@@ -198,7 +198,7 @@ export default function Masajes() {
                 </div>
             </div>
             <div id="imagen" className="mx-2">
-                <img src="../../fotoinfo.jpg" className="max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje reductor"></img>
+                <img src="../../masajereductor.webp" className="max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje reductor"></img>
             </div>
         </div>
 
@@ -207,7 +207,7 @@ export default function Masajes() {
             <h5 className="text-verdeoscuro text-center font-bold mb-2">Duración</h5>
             <div className=" w-[100%] lg:w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
                 <div className="bg-verdeoscuro h-2.5 rounded-full w-[75%]"></div>
-                <h5 className="ml-[70%] mt-2">1:30 hs</h5>
+                <h5 className="ml-[70%] mt-2">45 min</h5>
             </div>
         </div>
 
@@ -239,6 +239,8 @@ export default function Masajes() {
             </div>
         </div>
                   </div>
+
+
                     {/* DRENAJE*/}
                   <div id="drenaje" className="flex flex-col justify-center items-center mt-24 mx-5 lg:mx-24">
                     <div className="flex flex-col lg:flex-row gap-12 justify-around items-center w-full" id="contenedorreservar">
@@ -252,7 +254,7 @@ export default function Masajes() {
                                   </div>
                               </div>
                               <div id="imagen" className="mx-2">
-                                  <img src="../../fotoinfo.jpg" className=" max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
+                                  <img src="../../drenajelinfatico.webp" className=" max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
                               </div>
                       </div>
 
@@ -261,7 +263,7 @@ export default function Masajes() {
             <h5 className="text-verdeoscuro text-center font-bold mb-2">Duración</h5>
             <div className="w-[100%] lg:w-[50%] bg-verdeclaro rounded-full h-2.5 mb-12" id="duracion">
                 <div className="bg-verdeoscuro h-2.5 rounded-full w-[75%]"></div>
-                <h5 className="ml-[70%] mt-2">1:30 hs</h5>
+                <h5 className="ml-[70%] mt-2">45 min</h5>
             </div>
         </div>
 

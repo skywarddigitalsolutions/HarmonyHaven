@@ -43,7 +43,7 @@ export default function Nosotros() {
                     <div className="relative flex-1">
                         <div className="relative w-full h-full">
                             <Image
-                                src="/fotoinfo.jpg" // Cambia esto por la ruta a tu imagen
+                                src="/local.webp"
                                 alt="Sobre Nosotros"
                                 layout="fill"
                                 objectFit="cover"

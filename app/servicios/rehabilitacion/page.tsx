@@ -6,7 +6,7 @@ export default function Rehabilitacion() {
     return (
         <>
             <Navbar />
-            <div className="bg-gray-100 relative my-12" id="body">
+            <div className="bg-gray-100 relative py-12" id="body">
 
                 {/* Breadcrumb */}
                 <nav className="absolute top-0 left-0 right-0 mt-8 mx-5 z-10" aria-label="Breadcrumb">
@@ -71,7 +71,7 @@ export default function Rehabilitacion() {
 
                 {/* Imagen de fondo */}
                 <div className="relative">
-                    <img src="../../fotoinfo.jpg" className="object-cover w-full h-[25vh] opacity-80 rounded-2xl" alt="Rehabilitación" />
+                    <img src="../../rehabilitacion.webp" className="object-cover w-full h-[25vh] filter brightness-50 rounded-2xl" alt="Rehabilitación" />
 
                     {/* Fondo con gradiente */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white to-white opacity-90"></div>

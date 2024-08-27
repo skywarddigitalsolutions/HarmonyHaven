@@ -80,7 +80,7 @@ export default function Contacto() {
                         <h3 className="text-2xl font-semibold mb-12">Información de Contacto</h3>
                         <div className="flex items-center mb-4">
                             <FaMapMarkerAlt className="text-2xl mr-4" />
-                            <p>Fray Martínez 461, San Miguel del Monte, Argentina</p>
+                            <p>Fray Martínez 491, San Miguel del Monte, Argentina</p>
                         </div>
                         <div className="flex items-center mb-4">
                             <FaPhoneAlt className="text-2xl mr-4" />

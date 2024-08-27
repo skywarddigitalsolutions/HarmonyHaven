@@ -8,52 +8,52 @@ export default function InsumosOrtopedicos() {
         {
             nombre: "Bota Walker",
             descripcion: "Ideal para inmovilizar y proteger el pie y el tobillo tras una lesión o cirugía.",
-            imagen: "/imagenes/bota-walker.jpg",
+            imagen: "./bota-walker.webp",
         },
         {
             nombre: "Inmovilizador de Muñeca",
             descripcion: "Proporciona soporte y estabilidad para la muñeca después de lesiones o cirugías.",
-            imagen: "/imagenes/inmovilizador-muneca.jpg",
+            imagen: "./inmovilizador-muneca.webp",
         },
         {
             nombre: "Inmovilizador de Codo",
             descripcion: "Ayuda a inmovilizar y proteger el codo para una recuperación rápida.",
-            imagen: "/imagenes/inmovilizador-codo.jpg",
+            imagen: "./inmovilizador-codo.webp",
         },
         {
             nombre: "Inmovilizador de Hombro: Cabestrillo",
             descripcion: "Soporte para el hombro y el brazo, ideal para lesiones y recuperación postoperatoria.",
-            imagen: "/imagenes/cabestrillo.jpg",
+            imagen: "./hombro.webp",
         },
         {
             nombre: "Inmovilizador de Rodilla con Varillas",
             descripcion: "Ofrece inmovilización completa de la rodilla para garantizar una recuperación adecuada.",
-            imagen: "/imagenes/inmovilizador-rodilla.jpg",
+            imagen: "./inmovilizador-rodilla.webp",
         },
         {
             nombre: "Andadores con o sin Ruedas",
             descripcion: "Diseñados para proporcionar apoyo y movilidad segura para personas con dificultades de equilibrio.",
-            imagen: "/imagenes/andador.jpg",
+            imagen: "./andador.webp",
         },
         {
             nombre: "Muletas",
             descripcion: "Ayudan a caminar con seguridad y estabilidad tras una lesión o cirugía.",
-            imagen: "/imagenes/muletas.jpg",
+            imagen: "./muletas.webp",
         },
         {
             nombre: "Sillas de Ruedas",
             descripcion: "Sillas de ruedas cómodas y duraderas para movilidad diaria.",
-            imagen: "/imagenes/silla-ruedas.jpg",
+            imagen: "./silla-ruedas.webp",
         },
         {
             nombre: "Bastones",
             descripcion: "Soporte adicional para caminar, ideal para personas mayores o con movilidad reducida.",
-            imagen: "/imagenes/baston.jpg",
+            imagen: "./baston.webp",
         },
         {
             nombre: "Trípodes",
             descripcion: "Ofrecen mayor estabilidad que los bastones tradicionales para personas con movilidad reducida.",
-            imagen: "/imagenes/tripode.jpg",
+            imagen: "./baston2.webp",
         },
     ];
 
@@ -64,7 +64,7 @@ export default function InsumosOrtopedicos() {
 
                 {/* Imagen de fondo */}
                 <div className="relative">
-                    <img src="../../fotoinfo.jpg" className="object-cover w-full h-[25vh] opacity-80 rounded-2xl" alt="Insumos Ortopédicos" />
+                    <img src="../../insumos.webp" className="object-cover w-full h-[25vh] filter brightness-50 rounded-2xl" alt="Insumos Ortopédicos" />
 
                     {/* Fondo con gradiente */}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white to-white opacity-90"></div>
@@ -80,10 +80,10 @@ export default function InsumosOrtopedicos() {
                 </div>
 
                 {/* Productos */}
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-12 py-5 gap-6 px-5 lg:px-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 py-5 gap-6 px-5 lg:px-10">
                     {productos.map((producto, index) => (
                         <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center">
-                            <img src={producto.imagen} alt={producto.nombre} className="w-full h-48 object-cover mb-4 rounded-md" />
+                            <img src={producto.imagen} alt={producto.nombre} className="h-96 w-96 object-cover mb-4 rounded-md" />
                             <h4 className="text-xl font-semibold text-verdeoscuro mb-2">{producto.nombre}</h4>
                             <p className="text-sm text-gray-700 mb-4">{producto.descripcion}</p>
                             <a 

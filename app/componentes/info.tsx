@@ -48,7 +48,7 @@ export default function Info() {
           </div>
           <img
             alt="Product screenshot"
-            src="./fotoinfo.jpg"
+            src="./local.webp"
             width={2432}
             height={1442}
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover lg:w-[48rem] lg:max-w-none lg:rounded-xl lg:shadow-xl lg:ring-1 lg:ring-gray-400/10"

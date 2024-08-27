@@ -1,13 +1,15 @@
+import Image from "next/image";
 import "./hero.css";
-
+import Fondo from "../../public/fondo.webp"
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center lg:mt-12 bg-black overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src="./fondo.jpg"
+        <Image
+          src={Fondo}
           alt="Fondo"
           className="w-full h-full object-cover opacity-60"
+          
         />
       </div>
       <div className="relative text-center" id="cuadradotexto">
