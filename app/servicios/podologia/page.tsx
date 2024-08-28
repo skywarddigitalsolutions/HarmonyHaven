@@ -1,5 +1,6 @@
 import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
+import Link from "next/link";
 import { FaRegSmile, FaRegHeart, FaBed, FaShieldAlt, FaSpa, FaHeartbeat, FaShieldVirus, FaBalanceScale, FaBriefcaseMedical, FaStethoscope, FaUserNurse, FaHandHoldingMedical } from 'react-icons/fa';
 import { GiFootPlaster, GiFootprint } from "react-icons/gi";
 
@@ -84,9 +85,11 @@ export default function Podologia() {
                         <p className="text-verdeoscuro text-lg mb-6 mx-4 lg:mx-0">
                             La podología se enfoca en la prevención, diagnóstico y tratamiento de los trastornos y afecciones de los pies y uñas. Ofrecemos soluciones especializadas para problemas como uñas encarnadas, hongos y pie diabético.
                         </p>
-                        <button className="p-5 bg-verde text-white rounded-xl">
-                            Reservar turno
-                        </button>
+                         <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%podología`"} target="_blank">
+                            <button className="p-5 bg-verde text-white rounded-xl">
+                                Reservar turno
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

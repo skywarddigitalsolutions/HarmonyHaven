@@ -1,6 +1,7 @@
 import Navbar from "../../navbar/page"
 import Footer from "../../footer/page"
 import { FaRegSmile, FaRegHeart, FaBed, FaShieldAlt } from 'react-icons/fa';
+import Link from "next/link";
 
 export default function Masajes() {
     return (
@@ -84,9 +85,11 @@ export default function Masajes() {
                         <p className="text-verdeoscuro text-lg mb-6 mx-4 lg:mx-0">
                             El masaje es un método de valoración y tratamiento manual de aquellas partes del cuerpo que presentan alguna dolencia, con el objetivo de mejorar el dolor, reducir o eliminar tensiones musculares, mejorar la circulación sanguínea y linfática y conseguir un alivio del estrés, la ansiedad y las tensiones diarias.
                         </p>
+                        <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%20masajes`"} target="_blank">
                         <button className="p-5 bg-verde text-white rounded-xl">
                             Reservar turno
                         </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -124,9 +127,9 @@ export default function Masajes() {
                                         La bambuterapia es un tipo de tratamiento estético en el que se usa como herramienta cañas de bambú de diversos tamaños. Se aplica presión en distintas partes del cuerpo y se obtienen diferentes beneficios terapéuticos y estéticos.
                                     </h5>
                                 </div>
-                                <div>
+                                <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%20masaje%20con%20cañas`"} target="_blank">
                                     <button className="p-5 bg-verde text-lg text-white rounded-xl">Reservar turno</button>
-                                </div>
+                                </Link>
                             </div>
                             <div id="imagen" className="mx-2">
                                 <img src="../../masajeconcañas.webp" className=" max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>
@@ -194,7 +197,9 @@ export default function Masajes() {
                     </p>
                 </div>
                 <div className="text-end">
+                <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%20masaje%20reductor`"} target="_blank">
                     <button className="p-5 bg-verde text-lg  text-white rounded-xl">Reservar turno</button>
+                </Link>
                 </div>
             </div>
             <div id="imagen" className="mx-2">
@@ -249,9 +254,9 @@ export default function Masajes() {
                                       <h4 className="text-5xl font-bold text-verde mb-5">Drenaje linfático </h4>
                                       <h5 className="text-lg text-verdeoscuro max-w-auto"> Es una técnica de masaje suave y lenta que tiene como objetivo facilitar el paso de la linfa a través del sistema circulatorio y estimular su eliminación.                                  </h5>
                                   </div>
-                                  <div>
+                                  <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%20drenaje%20linfático`"}>
                                       <button className="p-5 bg-verde text-lg text-white rounded-xl">Reservar turno</button>
-                                  </div>
+                                  </Link>
                               </div>
                               <div id="imagen" className="mx-2">
                                   <img src="../../drenajelinfatico.webp" className=" max-w-screen lg:max-w-[500px] rounded-xl" alt="Masaje con cañas de bambú"></img>

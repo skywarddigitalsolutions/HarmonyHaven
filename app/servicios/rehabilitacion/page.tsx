@@ -1,5 +1,6 @@
 import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
+import Link from "next/link";
 import { FaBrain, FaHandsHelping, FaRunning, FaHeartbeat } from 'react-icons/fa';
 
 export default function Rehabilitacion() {
@@ -83,9 +84,12 @@ export default function Rehabilitacion() {
                         <p className="text-verdeoscuro text-lg mb-6 mx-4 lg:mx-0">
                             La rehabilitación consiste en un conjunto de actividades y estrategias bien diseñadas y planificadas que tienen el objetivo de recuperar el deterioro de ciertas funciones afectadas tras daños cerebrales y también a nivel físico. Se entrena el plano cognitivo (atención, memoria, orientación, plano emocional) y en el plano físico se trabajan los movimientos de los miembros superiores e inferiores tras haber sufrido alteraciones, lesiones o lo referido a los post quirúrgico, la motricidad fina de las manos y en la Reeducación Postural Global (RPG).
                         </p>
-                        <button className="p-5 bg-verde text-white rounded-xl">
-                            Reservar turno
-                        </button>
+                        <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%20rehabilitación`"} target="_blank">
+
+                            <button className="p-5 bg-verde text-white rounded-xl">
+                                Reservar turno
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

@@ -4,35 +4,36 @@ import { useState } from 'react';
 
 const testimonios = [
   {
-    name: 'Juan Pérez',
-    role: 'Paciente',
-    testimonial: 'El centro de rehabilitación cambió mi vida. El equipo es increíble y la atención personalizada me ayudó a recuperar mi movilidad más rápido de lo que esperaba.',
-    imageSrc: './foto1.jpg',
+    name: 'Paciente anónimo',
+    role: 'Masaje',
+    testimonial: 'Los masajes en el centro integral de rehabilitación son increíbles. Después de varias sesiones, siento un alivio significativo en mi espalda y una relajación profunda que no había experimentado antes.',
+    imageSrc: './paciente.png',
   },
   {
-    name: 'Ana García',
-    role: 'Paciente',
-    testimonial: 'Excelente atención y profesionalismo. Gracias a su dedicación, he mejorado significativamente mi condición y vuelvo a disfrutar de mis actividades diarias.',
-    imageSrc: './foto2.jpg',
+    name: 'Paciente anónimo',
+    role: 'Rehabilitación',
+    testimonial: 'La rehabilitación que recibí en el centro me permitió recuperar la movilidad de mi rodilla mucho más rápido de lo que esperaba. El equipo es muy profesional y atento a mis necesidades.',
+    imageSrc: './paciente.png',
   },
   {
-    name: 'Luis Rodríguez',
-    role: 'Paciente',
-    testimonial: 'Los programas de rehabilitación son de primer nivel. El enfoque integral y el apoyo constante hicieron una gran diferencia en mi recuperación.',
-    imageSrc: './foto3.jpg',
+    name: 'Paciente anónimo',
+    role: 'Compra de insumos ortopédicos',
+    testimonial: 'Compré una bota walker en el centro y la experiencia fue excelente. Me ayudaron a elegir la talla perfecta y me explicaron cómo usarla correctamente. ¡Un servicio de primera!',
+    imageSrc: './paciente.png',
   },
   {
-    name: 'María López',
-    role: 'Paciente',
-    testimonial: 'Un equipo muy profesional y dedicado. La atención es personalizada y se nota el compromiso con el bienestar de los pacientes.',
-    imageSrc: './foto4.jpg',
+    name: 'Paciente anónimo',
+    role: 'Traumatología',
+    testimonial: 'El equipo de traumatología del centro es de primer nivel. Me brindaron un diagnóstico preciso y el tratamiento adecuado para mi lesión. Gracias a ellos, estoy en camino a una recuperación total.',
+    imageSrc: './paciente.png',
   },
   {
-    name: 'Carlos Martínez',
-    role: 'Paciente',
-    testimonial: 'Me impresionó la calidad del servicio y el cuidado recibido. Gracias a ellos, he recuperado gran parte de mi movilidad y estoy muy agradecido.',
-    imageSrc: './foto5.jpg',
-  },
+    name: 'Paciente anónimo',
+    role: 'General',
+    testimonial: 'El centro integral de rehabilitación superó todas mis expectativas. Desde el momento en que ingresé, fui recibida con una atención cálida y profesional. Su enfoque integral, que combina rehabilitación física con apoyo emocional, ha hecho una gran diferencia en mi calidad de vida.',
+    imageSrc: './paciente.png',
+}
+
 ];
 
 export default function Testimonios() {

@@ -1,5 +1,6 @@
 import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
+import Link from "next/link";
 import { FaRegSmile, FaRegHeart, FaBed, FaShieldAlt, FaSpa, FaHeartbeat, FaShieldVirus, FaBalanceScale } from 'react-icons/fa';
 
 export default function Reflexología() {
@@ -82,9 +83,12 @@ export default function Reflexología() {
                         <h5 className="text-lg text-verdeclaro mb-5">Estimulación de puntos en los pies para equilibrar el cuerpo</h5>
                         <p className="text-verdeoscuro text-lg mb-6 mx-4 lg:mx-0">
                         La reflexología es una terapia complementaria de la medicina tradicional, que se basa en la existencia de puntos reflejos en los pies, las manos y las orejas que están conectados con diferentes zonas del cuerpo. Al aplicar presión en estos puntos, se pueden estimular los órganos y sistemas correspondientes, promoviendo así la salud y el bienestar general.                        </p>
-                        <button className="p-5 bg-verde text-white rounded-xl">
-                            Reservar turno
-                        </button>
+                        
+                        <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%20reflexología`"} target="_blank">
+                            <button className="p-5 bg-verde text-white rounded-xl">
+                                Reservar turno
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

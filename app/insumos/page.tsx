@@ -51,7 +51,7 @@ export default function InsumosOrtopedicos() {
             imagen: "./baston.webp",
         },
         {
-            nombre: "Trípodes",
+            nombre: "Trípodos",
             descripcion: "Ofrecen mayor estabilidad que los bastones tradicionales para personas con movilidad reducida.",
             imagen: "./baston2.webp",
         },
@@ -82,18 +82,22 @@ export default function InsumosOrtopedicos() {
                 {/* Productos */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 py-5 gap-6 px-5 lg:px-10">
                     {productos.map((producto, index) => (
-                        <div key={index} className="bg-white shadow-md rounded-lg p-6 text-center">
-                            <img src={producto.imagen} alt={producto.nombre} className="h-96 w-96 object-cover mb-4 rounded-md" />
-                            <h4 className="text-xl font-semibold text-verdeoscuro mb-2">{producto.nombre}</h4>
-                            <p className="text-sm text-gray-700 mb-4">{producto.descripcion}</p>
-                            <a 
-                                href={`https://wa.me/?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(producto.nombre)}`} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center bg-verde text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-verdeoscuro"
-                            >
-                                <FaWhatsapp className="mr-2" /> Consultar por WhatsApp
-                            </a>
+                        <div key={index} className="bg-white shadow-md rounded-lg p-6 flex flex-col h-full">
+                            <div className="flex flex-col flex-grow text-center">
+                                <img src={producto.imagen} alt={producto.nombre} className="h-96 w-full object-cover mb-4 rounded-md mx-auto" />
+                                <h4 className="text-xl font-semibold text-verdeoscuro mb-2">{producto.nombre}</h4>
+                                <p className="text-sm text-gray-700 mb-4">{producto.descripcion}</p>
+                            </div>
+                            <div className="flex justify-center mt-auto">
+                                <a 
+                                    href={`https://wa.me/?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(producto.nombre)}`} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center bg-verde text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-verdeoscuro"
+                                >
+                                    <FaWhatsapp className="mr-2" /> Consultar por WhatsApp
+                                </a>
+                            </div>
                         </div>
                     ))}
                 </div>

@@ -1,6 +1,7 @@
 import { Contact } from "@/app/componentes/contacto-btn";
 import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
+import Link from "next/link";
 import { FaBone, FaUserMd, FaProcedures, FaHeartbeat } from 'react-icons/fa';
 
 export default function Traumatologia() {
@@ -84,9 +85,11 @@ export default function Traumatologia() {
                         <p className="text-verdeoscuro text-lg mb-6 mx-4 lg:mx-0">
                             Nuestro servicio de traumatología se enfoca en la evaluación, diagnóstico y tratamiento de lesiones y trastornos relacionados con el sistema musculoesquelético. Abordamos una amplia gama de problemas, desde fracturas y esguinces hasta enfermedades crónicas como la artritis. Utilizamos técnicas avanzadas y personalizadas para asegurar la mejor recuperación y bienestar del paciente.
                         </p>
-                        <button className="p-5 bg-verde text-white rounded-xl">
-                            Reservar turno
-                        </button>
+                        <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%20traumatología`"} target="_blank">
+                            <button className="p-5 bg-verde text-white rounded-xl">
+                                Reservar turno
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

@@ -33,7 +33,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Síguenos</h3>
             <div className="flex space-x-4">
-              <a href="#">
+              <a href="instagram.com/harmonyhavenba">
                 <FaInstagram className="h-7 w-7" />
               </a>
               <a href="#">

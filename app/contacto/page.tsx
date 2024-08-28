@@ -88,13 +88,13 @@ export default function Contacto() {
                         </div>
                         <div className="flex items-center mb-4">
                             <FaInstagram className="text-2xl mr-4" />
-                            <a href="https://instagram.com/harmonyhavenba" target="_blank" rel="noopener noreferrer" className="hover:text-verdeclaro">
+                            <a href="https://instagram.com/harmonyhavenba" target="_blank" rel="noopener noreferrer" className="hover:text-verdeoscuro">
                                 @harmonyhavenba
                             </a>
                         </div>
                         <div className="flex items-center">
                             <FaWhatsapp className="text-2xl mr-4" />
-                            <a href="https://wa.me/5491155111262" target="_blank" rel="noopener noreferrer" className="hover:text-verdeclaro">
+                            <a href="https://wa.me/5491155111262" target="_blank" rel="noopener noreferrer" className="hover:text-verdeoscuro">
                                 WhatsApp
                             </a>
                         </div>
@@ -104,7 +104,7 @@ export default function Contacto() {
                 {/* Mapa embebido */}
                 <div className="text-center mt-12">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.1460857752396!2d-58.80406572567061!3d-35.43432735552383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd7b7e682f8df9%3A0x2637b445f3bd940d!2sFray%20Manuel%20Mart%C3%ADnez%20461%2C%20San%20Miguel%20del%20Monte%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1692786901984!5m2!1ses-419!2sar"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.4939441053234!2d-58.80949112441938!3d-35.44256407266533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd693d70e7617b%3A0x5333ae4ce65b7acb!2sFray%20Francisco%20Mart%C3%ADnez%20491%2C%20B2270%20San%20Miguel%20del%20Monte%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1724807183257!5m2!1ses-419!2sar"
                         className="w-full h-[400px] rounded-lg border-none"
                         loading="lazy"
                         title="Mapa de ubicación"

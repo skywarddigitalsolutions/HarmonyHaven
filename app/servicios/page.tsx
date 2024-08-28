@@ -1,5 +1,7 @@
 
 import { ChevronRightIcon } from '@heroicons/react/20/solid';
+import Navbar from '../navbar/page';
+import Footer from '../footer/page';
 
 const services = [
   { name: 'Masajes', description: 'Bienestar corporal', href: '/servicios/masajes', imageSrc: './masajes.webp' },
@@ -11,9 +13,11 @@ const services = [
 
 export default function IndexServicios() {
   return (
+    <>
+    <Navbar/>
     <section className="bg-gray-100 py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center text-verde mb-12">Nuestros Servicios</h2>
+        <h2 className="text-5xl font-bold text-center text-verde py-12">Nuestros Servicios</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <a key={service.name} href={service.href} className="relative group block rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -37,5 +41,7 @@ export default function IndexServicios() {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 }

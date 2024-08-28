@@ -1,6 +1,8 @@
 import Image from "next/image";
 import "./hero.css";
 import Fondo from "../../public/fondo.webp"
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center lg:mt-12 bg-black overflow-hidden">
@@ -20,9 +22,11 @@ export default function Hero() {
           Tratamientos integrales y personalizados para una rehabilitación efectiva. Cuidamos de ti en cada paso del proceso.
         </h4>
         <div className="flex justify-center">
+          <Link href={"https://wa.me/+5491155111262?text=Hola,%20quiero%20reservar%20un%20turno%20para%20`"} target="_blank">
           <button className="buttonhero">
             <span className="spanhero">Contáctanos</span>
           </button>
+          </Link>
         </div>
       </div>
     </div>
