@@ -14,7 +14,7 @@ export default function Contacto() {
 
         // Crear el mensaje de WhatsApp con los datos del formulario
         const mensajeWhatsApp = `Hola, me llamo ${nombre}. Mi consulta es: ${mensaje}`;
-        const urlWhatsApp = `https://wa.me/+5491155111262?text=${encodeURIComponent(mensajeWhatsApp)}`;
+        const urlWhatsApp = `https://wa.me/+5491135014258?text=${encodeURIComponent(mensajeWhatsApp)}`;
 
         // Redirigir al usuario a WhatsApp
         window.location.href = urlWhatsApp;
@@ -80,11 +80,15 @@ export default function Contacto() {
                         <h3 className="text-2xl font-semibold mb-12">Información de Contacto</h3>
                         <div className="flex items-center mb-4">
                             <FaMapMarkerAlt className="text-2xl mr-4" />
-                            <p>Fray Martínez 491, San Miguel del Monte, Argentina</p>
+                            <a href="https://maps.app.goo.gl/Lmo2YiGnCsY7NxXB7" target="_blank" rel="noopener noreferrer" className="hover:text-verdeoscuro">
+                            Fray Martínez 491, San Miguel del Monte, Argentina
+                            </a>
                         </div>
                         <div className="flex items-center mb-4">
                             <FaPhoneAlt className="text-2xl mr-4" />
-                            <p>+5491155111262</p>
+                            <a href="https://wa.me/+5491135014258" target="_blank" rel="noopener noreferrer" className="hover:text-verdeoscuro">
+                                 +5491135014258
+                            </a>
                         </div>
                         <div className="flex items-center mb-4">
                             <FaInstagram className="text-2xl mr-4" />
@@ -94,8 +98,8 @@ export default function Contacto() {
                         </div>
                         <div className="flex items-center">
                             <FaWhatsapp className="text-2xl mr-4" />
-                            <a href="https://wa.me/5491155111262" target="_blank" rel="noopener noreferrer" className="hover:text-verdeoscuro">
-                                WhatsApp
+                            <a href="https://wa.me/+5491135014258" target="_blank" rel="noopener noreferrer" className="hover:text-verdeoscuro">
+                                +5491135014258
                             </a>
                         </div>
                     </div>
