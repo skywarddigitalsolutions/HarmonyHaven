@@ -2,7 +2,7 @@ import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
 import { FaWhatsapp } from "react-icons/fa";
 import { Contact } from "../componentes/contacto-btn";
-
+import Head from "next/head";
 export default function InsumosOrtopedicos() {
     const productos = [
         {
@@ -59,6 +59,15 @@ export default function InsumosOrtopedicos() {
 
     return (
         <>
+            <Head>
+                <title>Insumos Ortopédicos - Soluciones para tu Movilidad y Comodidad</title>
+                <meta name="description" content="Descubre nuestra variedad de insumos ortopédicos para facilitar la recuperación de lesiones y mejorar la movilidad. Contáctanos por WhatsApp para más información." />
+                <meta name="keywords" content="insumos ortopédicos, bota walker, muletas, andadores, sillas de ruedas, inmovilizador de muñeca, inmovilizador de rodilla" />
+                <meta name="author" content="Harmony Haven" />
+                <meta property="og:title" content="Insumos Ortopédicos - Soluciones para tu Movilidad" />
+                <meta property="og:description" content="Variedad de productos ortopédicos diseñados para tu comodidad. Contáctanos para realizar tu pedido." />
+                <meta property="og:url" content="https://www.harmonyhaven.com.ar/insumos-ortopedicos" />
+            </Head>
             <Navbar />
             <div className="bg-gray-100 relative py-12" id="body">
 

@@ -3,10 +3,20 @@ import Navbar from "@/app/navbar/page";
 import Link from "next/link";
 import { FaRegSmile, FaRegHeart, FaBed, FaShieldAlt, FaSpa, FaHeartbeat, FaShieldVirus, FaBalanceScale, FaBriefcaseMedical, FaStethoscope, FaUserNurse, FaHandHoldingMedical } from 'react-icons/fa';
 import { GiFootPlaster, GiFootprint } from "react-icons/gi";
-
+import Head from "next/head";
 export default function Podologia() {
     return(
         <>
+            <Head>
+                <title>Podología | Harmony Haven</title>
+                <meta name="description" content="Cuidado y alivio para pies y uñas. Ofrecemos tratamientos especializados para uñas encarnadas, hongos y pie diabético." />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="canonical" href="https://harmonyhaven.com.ar/podologia" />
+                <meta property="og:title" content="Podología | Harmony Haven" />
+                <meta property="og:description" content="Cuidado y alivio para pies y uñas. Ofrecemos tratamientos especializados para uñas encarnadas, hongos y pie diabético." />
+                <meta property="og:url" content="https://harmonyhaven.com.ar/podologia" />
+                <meta property="og:type" content="website" />
+            </Head>
             <Navbar/>
             <div className="relative py-12 bg-gray-100" id="body">
 

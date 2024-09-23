@@ -2,10 +2,17 @@ import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
 import Link from "next/link";
 import { FaBrain, FaHandsHelping, FaRunning, FaHeartbeat } from 'react-icons/fa';
+import Head from "next/head";
 
 export default function Rehabilitacion() {
     return (
         <>
+            <Head>
+                <title>Rehabilitación | Harmony Haven</title>
+                <meta name="description" content="Centro Integral de Rehabilitación: Recuperación cognitiva y física, mejorando la calidad de vida a través de terapias personalizadas." />
+                <meta name="keywords" content="rehabilitación, centro integral, rehabilitación cognitiva, motricidad fina, recuperación física, reeducación postural, salud" />
+                <meta name="author" content="Harmony Haven" />
+            </Head>
             <Navbar />
             <div className="bg-gray-100 relative py-12" id="body">
 

@@ -2,10 +2,17 @@ import Navbar from "../../navbar/page"
 import Footer from "../../footer/page"
 import { FaRegSmile, FaRegHeart, FaBed, FaShieldAlt } from 'react-icons/fa';
 import Link from "next/link";
-
+import Head from "next/head";
 export default function Masajes() {
     return (
-        <>
+        <>  
+            <Head>
+                <title>Masajes | Harmony Haven</title>
+                <meta name="description" content="En Harmony Haven, ofrecemos masajes que alivian tensiones, reducen el estrés y mejoran tu bienestar corporal. Descubre nuestras terapias integrales de rehabilitación." />
+                <meta name="keywords" content="masajes, rehabilitación, bienestar, relajación, terapias, salud" />
+                <meta name="author" content="Harmony Haven" />
+                <link rel="canonical" href="https://harmonyhaven.com.ar/masajes" />
+            </Head>
             <Navbar />
                       
                 <div className="relative bg-gray-100 mt-12" id="body">

@@ -2,10 +2,21 @@ import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
 import Link from "next/link";
 import { FaRegSmile, FaRegHeart, FaBed, FaShieldAlt, FaSpa, FaHeartbeat, FaShieldVirus, FaBalanceScale } from 'react-icons/fa';
-
+import Head from "next/head";
 export default function Reflexología() {
     return(
         <>
+            <Head>
+                <title>Reflexología | Harmony Haven</title>
+                <meta name="description" content="Estimulación de puntos en los pies para equilibrar el cuerpo. La reflexología promueve la salud y el bienestar general." />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="canonical" href="https://harmonyhaven.com.ar/reflexologia" />
+                <meta property="og:title" content="Reflexología | Harmony Haven" />
+                <meta property="og:description" content="Estimulación de puntos en los pies para equilibrar el cuerpo. La reflexología promueve la salud y el bienestar general." />
+                <meta property="og:url" content="https://harmonyhaven.com.ar/reflexologia" />
+                <meta property="og:type" content="website" />
+            </Head>
+
             <Navbar/>
             <div className=" bg-gray-100 relative py-12" id="body">
 

@@ -9,9 +9,9 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src={Fondo}
-          alt="Fondo"
+          alt="Centro Integral de Rehabilitación"
           className="w-full h-full object-cover opacity-60"
-          
+          priority 
         />
       </div>
       <div className="relative text-center" id="cuadradotexto">

@@ -3,10 +3,18 @@ import Footer from "@/app/footer/page";
 import Navbar from "@/app/navbar/page";
 import Link from "next/link";
 import { FaBone, FaUserMd, FaProcedures, FaHeartbeat } from 'react-icons/fa';
-
+import Head from "next/head";
 export default function Traumatologia() {
     return (
         <>
+            <Head>
+                <title>Traumatología | Harmony Haven</title>
+                <meta name="description" content="Especialistas en traumatología: diagnóstico, tratamiento y rehabilitación de fracturas, lesiones y enfermedades crónicas como la artritis. Cuidado integral en San Miguel del Monte." />
+                <meta name="keywords" content="traumatología, fracturas, lesiones musculares, artritis, rehabilitación, San Miguel del Monte" />
+                <meta property="og:title" content="Traumatología - Cuidado Integral del Sistema Musculoesquelético" />
+                <meta property="og:description" content="Servicios de traumatología en San Miguel del Monte. Tratamos fracturas, esguinces, artritis y mucho más." />
+                <meta property="og:type" content="website" />
+            </Head>
             <Navbar />
             <div className="bg-gray-100 relative py-12" id="body">
 

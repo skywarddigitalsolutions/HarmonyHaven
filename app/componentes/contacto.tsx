@@ -37,7 +37,7 @@ export default function IndexContacto() {
           </div>
           <div className="relative hidden lg:flex lg:flex-1 lg:items-center lg:justify-end">
             <img
-              alt="App screenshot"
+              alt="Transformá tu bienestar"
               src="./fotoinfo.jpg"
               width={1924}
               height={1080}

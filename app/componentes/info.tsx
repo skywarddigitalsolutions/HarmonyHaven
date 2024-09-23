@@ -47,7 +47,7 @@ export default function Info() {
             </div>
           </div>
           <img
-            alt="Product screenshot"
+            alt="Centro Integral de Rehabilitación"
             src="./local.webp"
             width={2432}
             height={1442}

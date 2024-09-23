@@ -47,7 +47,15 @@ export default function Footer() {
     </footer>
     <div className="bg-verdeoscuro py-5 text-verdeclaro">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p>&copy; {new Date().getFullYear()} Hecho por Skyward Digital Solutions. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Hecho por {" "}
+          <a
+            href="https://sds.com.ar"
+            className="text-crema hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Skyward Digital Solutions
+          </a>. Todos los derechos reservados.</p>
         </div>
     </div>
       </>
